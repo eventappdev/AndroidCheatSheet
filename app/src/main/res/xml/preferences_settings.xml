@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <CheckBoxPreference
+        android:key="@string/key_user"
+        app:defaultValue="true"
+        android:title="@string/username"
+        android:summaryOff="username hidden"
+        android:summaryOn="username visible"/>
+   </PreferenceScreen>
