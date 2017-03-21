@@ -6,9 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
 
-import com.androidprojects.androidcheatsheet.Charts.LineChartActivity;
 import com.androidprojects.androidcheatsheet.Firebase.FirebaseActivity;
-import com.androidprojects.androidcheatsheet.MaterialDesign.MaterialDesignSamples;
+import com.androidprojects.androidcheatsheet.JSONParsing.JSONListActivity;
 import com.androidprojects.androidcheatsheet.Samples.IntentActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -40,19 +39,19 @@ public class MainActivity extends AppCompatActivity {
         layoutMaterial.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, MaterialDesignSamples.class);
+                Intent intent = new Intent(MainActivity.this, JSONListActivity.class);
                 startActivity(intent);
             }
         });
 
-        LinearLayout layoutCharts = (LinearLayout) findViewById(R.id.layoutCharts);
+        /*LinearLayout layoutCharts = (LinearLayout) findViewById(R.id.layoutCharts);
         layoutMaterial.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, LineChartActivity.class);
                 startActivity(intent);
             }
-        });
+        });*/
 
     }
 
